@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a2e, #1a1a4e);
+    transition: background 1s ease;
+    color: white;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+nav {
+    display: none;
+}
+
+.search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    padding: 16px 24px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+input {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 280px;
+    flex: 1;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.108);
+}
+
+#weather-info {
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 40px 60px;
+    min-width: 300px;
+}
+
+#weather-info p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+#weather-info:empty {
+    display: none;
+}
+
+
+#weather-info h2 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+#weather-info .temp {
+    font-size: 120px;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#weather-info .condition {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+#weather-info .details {
+    font-size: 14px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+}
